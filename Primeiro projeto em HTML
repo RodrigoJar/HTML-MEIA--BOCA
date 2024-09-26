@@ -1,0 +1,87 @@
+HTML
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <haed>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="">
+        <title> 
+            Exemplos de Arrays e Objetos
+        </title>
+    </haed>
+    <body>
+        <div class="container">
+            <h1>Exemplos de Arrays e Objetos</h1>
+            <p>Veja abaixo os exemplos de Array e Objetos em JavaScript</p>
+            <button onclick="exebirArray()">Mostra Array </button>
+            <div id="arrayOutput" class="output"></div>
+            <button onclick="exibirObijeto()">Mostra Objeto</button>
+            <div id="objectOutput" class="Output"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+-------------------------------------------
+CSS
+body{
+  font-family: Arial, Sans-Serif;
+  background-color: #F4F4F4;
+  margin: 0;
+  padding: 0;
+}
+.container: ; {
+	max-width: 600px;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+  
+}
+p {
+  color: #666;
+  line-height: 1.6;
+}
+output {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  
+}
+button: hover {
+  background-color: #0056b3;
+  
+}
+-------------------------------------------------
+JAVAscript
+function exibirArray() {
+  let fruits = [Maçã, manga, banana, pera];
+  let output = <strong> Array de frutas: </strong>
+  output += "Total de frutas:" + fruits.length + "<br>";
+  fruits.forEach(function(fruits,index) {
+      output += (index + 1) + "." + fruit + "<br>";
+      
+  });
+  document.getElementById("arrayOutput").innerHTML = output;
+}
+
+function exibirObijeto()}
+ let pessoa = {
+     nome: "Maria",
+     idade: 30,
+     profissão: "Engenheira"
+ };
+ let output = "<strong> Objeto Pessoa:</strong><br>";
+ output += "Nome: " + pessoa.nome + "<br>";
+ output += "Idade: " + pessoa.idade + "<br>";
+ output += "Profissão: " + pessoa.profissão + "<br>";
+ 
+ document.getElementById("objectOutput").innerHTML = output;
+ }
